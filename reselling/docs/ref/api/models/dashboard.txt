@@ -1,0 +1,17 @@
+.. _ref-api-models-dashboard:
+
+================
+Models Dashboard
+================
+
+Blabla
+
+Class :
+=======
+.. automodule:: dashboard.models
+    :members:
+
+    
+Schema :
+========
+.. image:: ../../../_static/models_dashboard.png

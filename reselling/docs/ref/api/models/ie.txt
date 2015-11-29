@@ -1,0 +1,18 @@
+.. _ref-api-models-ie:
+
+=========
+Models ie
+=========
+
+Blabla
+
+Class :
+=======
+
+.. automodule:: ie.models
+    :members:
+
+    
+Schema :
+========
+.. image:: ../../../_static/models_ie.png

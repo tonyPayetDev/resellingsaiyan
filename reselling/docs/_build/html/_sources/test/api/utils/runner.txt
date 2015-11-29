@@ -1,0 +1,23 @@
+.. _ref-api-utils-runner:
+
+============
+Utils runner
+============
+
+La gestion des dates est exclusivement faite en naive à savoir utilisation
+de datetime python.
+
+Celery utilisant UTC (des aware timezone), j'ai patché django-celery pour
+l'utilisation des naives datetime.
+
+.. automodule:: runner.utils.date
+    :members:
+
+.. automodule:: runner.utils.logger
+    :members:
+
+.. automodule:: runner.utils.autoregister
+    :members:
+
+.. automodule:: runner.celery
+    :members:

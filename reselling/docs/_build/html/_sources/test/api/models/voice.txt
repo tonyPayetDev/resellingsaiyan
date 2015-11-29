@@ -1,0 +1,17 @@
+.. _ref-api-models-voice:
+
+============
+Models Voice
+============
+
+Blabla
+
+Class :
+=======
+.. automodule:: voice.models
+    :members:
+
+    
+Schema :
+========
+.. image:: ../../../_static/models_voice.png

@@ -1,0 +1,17 @@
+.. _ref-api-models-customers:
+
+================
+Models customers
+================
+
+Blabla
+
+Class :
+=======
+.. automodule:: customers.models
+    :members:
+
+    
+Schema :
+========
+.. image:: ../../../_static/models_customers.png

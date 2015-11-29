@@ -1,0 +1,22 @@
+================================
+Welcome to reselling documentation!
+================================
+
+Contents:
+
+.. toctree::
+    :maxdepth: 2
+
+    quickstart
+    ref/index_exploit
+    
+.. js:function:: $.getJSON(href, callback[, errback])
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

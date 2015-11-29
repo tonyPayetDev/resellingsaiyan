@@ -1,0 +1,17 @@
+.. _ref-api-models-lines:
+
+============
+Models lines
+============
+
+Blabla
+
+Class :
+=======
+.. automodule:: lines.models
+    :members:
+
+    
+Schema :
+========
+.. image:: ../../../_static/models_lines.png

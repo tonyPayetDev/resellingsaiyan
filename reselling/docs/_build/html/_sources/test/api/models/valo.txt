@@ -1,0 +1,17 @@
+.. _ref-api-models-valo:
+
+===========
+Models Valo
+===========
+
+Blabla
+
+Class :
+=======
+.. automodule:: valo.models
+    :members:
+
+    
+Schema :
+========
+.. image:: ../../../_static/models_valo.png

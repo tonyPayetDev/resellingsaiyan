@@ -1,0 +1,9 @@
+.. _ref-api-models-allrunner:
+
+=================
+All Models Runner
+=================
+   
+Schema :
+========
+.. image:: ../../../_static/runner.png

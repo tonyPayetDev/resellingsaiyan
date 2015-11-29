@@ -1,0 +1,242 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Utils runner &mdash; Python  documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Python  documentation" href="../../../index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="../../../index.html" class="fa fa-home"> Python</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index_exploit.html">Exploit-Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../exploit/runner.html">Exploit Runner</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">Python</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Utils runner</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../../../_sources/test/api/utils/runner.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="utils-runner">
+<span id="ref-api-utils-runner"></span><h1>Utils runner<a class="headerlink" href="#utils-runner" title="Permalink to this headline">¶</a></h1>
+<p>La gestion des dates est exclusivement faite en naive à savoir utilisation
+de datetime python.</p>
+<p>Celery utilisant UTC (des aware timezone), j&#8217;ai patché django-celery pour
+l&#8217;utilisation des naives datetime.</p>
+<span class="target" id="module-runner.utils.date"></span><p>Author: Philippe &#8216;paHpa&#8217; Vivien &lt;<a class="reference external" href="mailto:philippe&#46;vivien&#37;&#52;&#48;nerim&#46;com">philippe<span>&#46;</span>vivien<span>&#64;</span>nerim<span>&#46;</span>com</a>&gt;</p>
+<p>Copyright: Nerim, 2014</p>
+<dl class="function">
+<dt id="runner.utils.date.datenow">
+<code class="descclassname">runner.utils.date.</code><code class="descname">datenow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#runner.utils.date.datenow" title="Permalink to this definition">¶</a></dt>
+<dd><p>return now() with timezone aware from TZ setting or datetime</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="runner.utils.date.dt2ts">
+<code class="descclassname">runner.utils.date.</code><code class="descname">dt2ts</code><span class="sig-paren">(</span><em>dt</em><span class="sig-paren">)</span><a class="headerlink" href="#runner.utils.date.dt2ts" title="Permalink to this definition">¶</a></dt>
+<dd><p>DateTime To TimeStamp</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="runner.utils.date.ts2dt">
+<code class="descclassname">runner.utils.date.</code><code class="descname">ts2dt</code><span class="sig-paren">(</span><em>ts</em>, <em>timeplus=0</em><span class="sig-paren">)</span><a class="headerlink" href="#runner.utils.date.ts2dt" title="Permalink to this definition">¶</a></dt>
+<dd><p>TimeStamp To DateTime</p>
+</dd></dl>
+
+<span class="target" id="module-runner.utils.logger"></span><p>Author: Philippe &#8216;paHpa&#8217; Vivien &lt;<a class="reference external" href="mailto:philippe&#46;vivien&#37;&#52;&#48;nerim&#46;com">philippe<span>&#46;</span>vivien<span>&#64;</span>nerim<span>&#46;</span>com</a>&gt;</p>
+<p>Copyright: Nerim, 2014</p>
+<dl class="function">
+<dt id="runner.utils.logger.logdebug">
+<code class="descclassname">runner.utils.logger.</code><code class="descname">logdebug</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#runner.utils.logger.logdebug" title="Permalink to this definition">¶</a></dt>
+<dd><p>set debug logger</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="runner.utils.logger.loginfo">
+<code class="descclassname">runner.utils.logger.</code><code class="descname">loginfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#runner.utils.logger.loginfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>set info logger</p>
+</dd></dl>
+
+<span class="target" id="module-runner.utils.autoregister"></span><p>Author: Michal Danilák Mimino666
+Author: Philippe &#8216;paHpa&#8217; Vivien &lt;<a class="reference external" href="mailto:philippe&#46;vivien&#37;&#52;&#48;nerim&#46;com">philippe<span>&#46;</span>vivien<span>&#64;</span>nerim<span>&#46;</span>com</a>&gt;</p>
+<dl class="function">
+<dt id="runner.utils.autoregister.autoregister_admin">
+<code class="descclassname">runner.utils.autoregister.</code><code class="descname">autoregister_admin</code><span class="sig-paren">(</span><em>module</em>, <em>exclude_models=None</em>, <em>model_fields=None</em>, <em>exclude_fields=None</em>, <em>admin_fields=None</em>, <em>reversed_relations=None</em>, <em>ModelAdmin=&lt;class 'django.contrib.admin.options.ModelAdmin'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#runner.utils.autoregister.autoregister_admin" title="Permalink to this definition">¶</a></dt>
+<dd><p>&#64;param module: module containing django.db.models classes
+&#64;type module: str or __module__</p>
+<blockquote>
+<div>If you are providing str, use absolute path.</div></blockquote>
+<p>&#64;param exclude_models: list of models to exclude from auto-register
+&#64;type exclude_models: iterable of strings or None</p>
+<dl class="docutils">
+<dt>&#64;param model_fields: dictionary of additional fields for list_display</dt>
+<dd>{model_name: [field_name1, field_name2, ...]}</dd>
+</dl>
+<p>&#64;type model_fields: dict or None</p>
+<dl class="docutils">
+<dt>&#64;param exclude_fields: dictionary of fields to exclude from the models</dt>
+<dd>{model_name: [field_name1, field_name2, ...]}</dd>
+</dl>
+<p>&#64;type exclude_fields: dict or None</p>
+<dl class="docutils">
+<dt>&#64;param admin_fields: dictionary of additional admin fields</dt>
+<dd>{model_name: {admin_field_name: value, ...}}</dd>
+</dl>
+<p>&#64;type admin_fields: dict or None</p>
+<dl class="docutils">
+<dt>&#64;param reversed_relations: dictionary of additional reversed m2m/fk</dt>
+<dd><blockquote class="first">
+<div>relations to include to admin</div></blockquote>
+<p class="last">{model_name: [relation_name1, relation_name2, ...]}</p>
+</dd>
+</dl>
+<p>&#64;type reversed_relations: dict or None</p>
+</dd></dl>
+
+<span class="target" id="module-runner.celery"></span><p>Author: Philippe &#8216;paHpa&#8217; Vivien &lt;<a class="reference external" href="mailto:philippe&#46;vivien&#37;&#52;&#48;nerim&#46;com">philippe<span>&#46;</span>vivien<span>&#64;</span>nerim<span>&#46;</span>com</a>&gt;</p>
+<p>Copyright: Nerim, 2014</p>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright .
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
